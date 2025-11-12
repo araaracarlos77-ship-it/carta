@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carta para Flor 💌</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+</head>
+<body>
+  <div class="bg-fade" id="bgFade"></div>
+  <div class="container">
+    <canvas id="cartaCanvas" width="400" height="300"></canvas>
+    <div class="subtitle" id="subtitle">Haz click en la carta para abrirla 💖</div>
+  </div>
+
+  <div class="papel3d" id="papel3d">
+    <span id="papelMsg"></span>
+  </div>
+
+  <button class="close-btn" id="closeBtn">&times;</button>
+  <div class="firma">Con cariño, Carlos 💌</div>
+
+  <!-- Audios -->
+    <audio id="openSound" src="https://cdn.pixabay.com/audio/2022/09/26/audio_1b4ecb8a15.mp3" preload="auto"></audio>
+  <audio id="closeSound" src="https://cdn.pixabay.com/audio/2022/07/26/audio_124bfae6b5.mp3" preload="auto"></audio>
+  <audio id="bgMusic" src="musica.mp3" preload="auto" loop></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
